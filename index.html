@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B2S Embedding</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Welcome back to school!</h1>
+
+    <fieldset id="first_row_of_buttons">
+      <legend>Filter the view</legend>
+      <input type="botton" value="Oregon" id="Oregon" />
+      <input type="botton" value="Clear Filter" id="clear filter" />
+      <input type="botton" value="Undo" id="undo" />
+    </fieldset>
+
+    <div class="content">
+      <script
+        type="module"
+        src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"
+      ></script>
+
+      <tableau-viz
+        id="tableauViz"
+        src="https://public.tableau.com/views/Superstore_embedded_800x800/Overview"
+        toolbar="bottom"
+        hide-tabs
+      >
+      </tableau-viz>
+    </div>
+
+    <script
+      type="module"
+      src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"
+    ></script>
+
+    <script src="app.js"></script>
+
+    <h2>This is h2</h2>
+    <h3>This is h3</h3>
+    <p>This is a paragraph</p>
+  </body>
+</html>
